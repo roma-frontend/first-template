@@ -1,93 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-    height: 150vh;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+    background: rgb(30 30 30);
+    padding-inline: 3.5vw;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  padding: 25px 0;
 }
 
-header > h1 {
-    color: white;
-    font-size: 32px;
-}
-.gradient{
-    background: linear-gradient(0deg, #000 0%, rgba(30, 30, 30, 0.00) 100%);
-    z-index: 100;
-}
-
-.submenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header nav {
+  max-width: 1608px;
+  margin-inline: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.about, .design {
-    background-color: #151518;
-    color: white;
-    border: none;
-    font-size: 24px;
+header nav .submenu {
+  display: flex;
+  column-gap: 2rem;
 }
 
-.textInfo {
-    width: 780px;
-    position: absolute;
-    margin-top: 150px;
-    z-index: 2;
+.submenu a {
+  background: transparent;
+  display: inline-block;
+  color: #eeeef0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 200%;
+  letter-spacing: -0.5px;
+  text-decoration: none;
 }
 
-.textInfo > h1 {
-    font-size: 56px;
-    color: white;
+header .header__logo a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 0;
 }
 
-.textInfo > p {
-   color: #C5C5CC;
+.about,
+.design {
+  background-color: #151518;
+  color: white;
+  border: none;
+  font-size: 24px;
+}
+
+.socialMedia {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+  column-gap: 2rem;
+}
+
+
+.home__section {
+  position: relative;
+}
+
+.home__section .container {
+  max-width: 1608px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.home__section .container .textInfo {
+  max-width: 923px;
+  width: 100%;
+}
+
+.home__section .container .textInfo h1 {
+  color: #f5f5f7;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 128.571%;
+  margin-bottom: 2rem;
+}
+
+.textInfo p {
+    color:  #C5C5CC;
     font-size: 20px;
-
-}
-.socialMedia{
-    width: 30px;
-    height: 30px;
-    margin-top:20px ;
-}
-
-.icons>.margin{
-    margin-left:40px;
-}
-
-.body{
-    display: flex;
-}
-.profile{
-    width: 560px;
-    height: 750px;
-}
-.home__section{
-    position: relative;
-    background-color: #151518;
-    height: 150vh;
-}
-.imageInfo{
-    margin-left:690px;
-    opacity: 70%;
-    margin-top:120px;
-    z-index:1
-}
-
-.profile-remove{
-    position: absolute;
-    left:300px;
-    top:-20px;
-    z-index: 99;
+    font-weight: 700;
+    line-height: 360%;
+    margin-bottom: 2rem;
 }
 
 
+.imageInfo {
+    max-width: 860px;
+}
 
-
-
-.about__section, .design__section{
-    height: 1500px;
+.imageInfo img {
     width: 100%;
-    background-color: black;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about__section,
+.design__section {
+  width: 100%;
+  background-color: black;
 }
